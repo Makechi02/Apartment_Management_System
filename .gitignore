@@ -1,0 +1,15 @@
+/.idea
+/.vscode
+
+/public/assets/icons
+
+/public/assets/fonts/Be_Vietnam_Pro
+/public/assets/fonts/Figtree
+/public/assets/fonts/GFS_Didot
+/public/assets/fonts/Hubot-Sans
+/public/assets/fonts/Protest_Riot
+
+/public/assets/fonts/Chubbo/Fonts
+/public/assets/fonts/Supreme/Fonts
+
+.env

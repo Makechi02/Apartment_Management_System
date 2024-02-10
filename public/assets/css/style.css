@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'chubbo';
+    src:
+            url("../fonts/Chubbo/Chubbo-Variable.woff2") format('woff2 supports variations'),
+            url("../fonts/Chubbo/Chubbo-Variable.woff2") format('woff2-variations');
+}
+
+@font-face {
+    font-family: 'supreme';
+    src:
+            url("../fonts/Supreme/Supreme-Variable.woff2") format('woff2 supports variations'),
+            url("../fonts/Supreme/Supreme-Variable.woff2") format('woff2-variations');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'supreme', sans-serif;
+}
+
+.login-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100svh;
+    background-color: #d8e0e9ff;
+    padding-block: 2rem;
+}
+
+.login-container .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container .image-container img {
+    width: 100%;
+}
+
+.login-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-left: 2px solid black;
+}
+
+.login-form h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "chubbo", serif;
+}
+
+.login-form h2 {
+    font-family: 'chubbo', serif;
+}
+
+.login-form form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60%;
+}
+
+.login-form #login_error {
+    background-color: #e0513cff;
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-group .input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    border-bottom: 2px solid #000000;
+}
+
+.input-group .input:focus {
+    border-bottom: 2px solid #71b280ff;
+}
+
+.submit-btn {
+    background: #71b280ff;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-family: 'chubbo', serif;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 730px) {
+    .login-container {
+        flex-direction: column;
+        padding-block: unset;
+        padding-inline: 1rem;
+    }
+
+    .login-form {
+        border-left: none;
+    }
+
+    .login-form form {
+        width: 90%;
+    }
+}
